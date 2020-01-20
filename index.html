@@ -1,0 +1,275 @@
+<!Doctype HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
+    <meta name="description" content="Somos el componente esencial en el conocimiento de las finanzas subsoberanas." />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 200) {
+                $(".main-menu").addClass("main-menu-scroll");
+            } else {
+                $(".main-menu").removeClass("main-menu-scroll");
+            }
+        });
+    </script>
+    <!-- SCROLL ANIMATION -->
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd58a8AzZxe0Z4V3O8i6-jtIahLDy07O0&callback=initMap"></script>
+    <script src="informes.js"></script>
+    <script src="prensa.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>CN Finanzas</title>
+</head>
+<body>
+    <div class="main-menu">
+        <div class="main-menu-logo">
+            <a href="#home">
+                <img class="iso" src="img/cn.svg" alt="CN">
+                <img class="logo" src="img/logo.svg" alt="CN Finanzas">
+            </a>
+        </div>
+        <div class="main-menu-items">
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#informes">Informes</a>
+            <a href="#prensa">Prensa</a>
+            <a href="#contacto">Contacto</a>
+            <a class="language" href="eng.html">ENG</a>
+        </div>
+    </div>
+    <table id="home">
+        <tr>
+            <td>
+                <img class="home-logo hidden" src="img/logo.svg" alt="CN Finanzas">
+                <!-- <span class="hidden">texto</span>    -->
+            </td>
+        </tr>
+    </table>
+    <div id="nosotros">
+        <div class="section-title">
+            <h3>Nosotros</h3>
+            <hr>
+        </div>
+        <div class="section-text">
+            <p class="destacado">
+                En CN Finanzas conectamos a nuestros clientes, tanto del sector privado como público, con la más completa red de información económico-financiera del sector público (nacional, provincial, municipal y entes públicos) de la Argentina.
+            </p>
+            <p>
+                    Generamos valor agregado en los tomadores de decisiones a través de herramientas que permiten actuar con rapidez, precisión y confianza. Nuestra experiencia en el sector, la continua expansión de nuestros datos, y las herramientas diseñadas en función de las necesidades, convierte a CN Finanzas en un componente esencial en el conocimiento de las finanzas subsoberanas.
+            </p>
+        </div>
+        <div class="nosotros-socios">
+            <div class="socio hidden">
+                <img src="img/federico.jpg" alt="Pablo" class="socio-img">
+
+                <div class="socio-title">
+                    <p>Federico Cuba</p>
+                </div>
+                <p class="socio-texto">
+                    Licenciado en Economía de la Universidad de Buenos Aires. Docente de Economía Pública en la Universidad Católica Argentina. Fue analista del departamento de Research para Latinoamérica del banco HSBC y Analista Sr. de Sector Público en la consultora Economía y Regiones.</p>
+                <p class="socio-texto">                    Especializado en mercados financieros y análisis de solvencia fiscal. Formó parte de equipos de asesoramiento al sector público y también posee experiencia asistiendo al sector privado en la toma de decisiones en mercados de deuda soberana y sub-soberana.
+                </p>
+            </div>
+            <div class="socio hidden">
+                <img src="img/pablo.jpg" alt="Pablo" class="socio-img">
+
+                <div class="socio-title">
+                    <p>Pablo Niscovolos</p>
+                </div>
+                <p class="socio-texto">
+                   Licenciado en Economía de la Universidad de Buenos Aires. Fue docente de Macroeconomía y Política Económica en la Universidad de Buenos Aires y Analista de Sector Público y Comercio Exterior en la consultora Economía y Regiones.
+                </p>
+                <p class="socio-texto">
+                    Con amplio conocimiento de finanzas públicas y análisis fiscal. Ha asistido a instituciones financieras privadas para el desarrollo del crédito al sector público municipal Adicionalmente posee experiencia en el análisis de flujos comerciales y financieros.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="servicios">
+        <div class="section-title">
+            <h3>Servicios</h3>
+            <hr>
+        </div>
+        <div class="section-content">
+            <div class="servicios-item hidden">
+                <img src="img/finanzas-provinciales.svg" alt="">
+                <div class="servicio-title">
+                        Análisis de finanzas<br>
+                        provinciales
+                </div>
+                <div class="servicio-text">
+                        Brindamos asesoramiento sobre la situación financiera de cada provincia en particular y en su conjunto.
+                </div>
+            </div>
+            <div class="servicios-item hidden">
+                <img src="img/gestion-publica.svg" alt="">
+                <div class="servicio-title">
+                        Gestión pública e<br>
+                        impacto fiscal
+                </div>
+                <div class="servicio-text">
+                        Asistimos al sector público mediante análisis coyunturales y particulares que permiten planificar la política y la gestión.
+                </div>
+            </div>
+            <div class="servicios-item hidden">
+                <img src="img/macroeconomia.svg" alt="">
+                <div class="servicio-title">
+                        Análisis<br>
+                        macroeconómico
+                </div>
+                <div class="servicio-text">
+                        Ofrecemos una lectura objetiva de la situación macroeconómica y la exponemos de manera conjunta intentando explicar el rumbo esperado.
+                </div>
+            </div>
+            <!-- <div class="servicios-item hidden">
+                <img src="img/comercio-interrancional.svg" alt="">
+                <div class="servicio-title">
+                        Comercio exterior y<br>
+                        economía internacional
+                </div>
+                <div class="servicio-text">
+                    Otorgamos una visión integral de la situación internacional y su vínculo con la Argentina para permitir una correcta toma de decisiones tanto para el sector privado y público
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div id="informes">
+        <div class="section-title">
+            <h3>Informes</h3>
+            <hr>
+        </div>
+
+        <!--<p class="proximamente">
+            Este contenido estará disponible proximamente.
+        </p>-->
+        <div id="informeslist" class="hidden">
+        </div>
+    </div>
+    <div id="prensa">
+        <div class="section-title">
+            <h3>Prensa</h3>
+            <hr>
+        </div>
+        <!--<p class="proximamente">
+            Este contenido estará disponible proximamente.
+        </p>-->
+        <div id="prensalist" class="hidden">
+        </div> 
+
+    </div>
+    <div id="contacto">
+        <div class="section-title">
+            <h3>Contacto</h3>
+            <hr>
+        </div>
+        <div class="contact-form-container">
+            <p class="contact-text">
+                ¡Escribinos y nos pondremos en contacto con vos lo antes posible!
+            </p>
+            <form action="mail.php" method="POST">
+                <div class="input-container">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="Nombre">
+                </div>
+                <div class="input-container">
+                    <label for="Email">Email</label>
+                    <input type="mail" name="Email">
+                </div>
+                <div class="input-container">
+                    <label for="Telefono">Teléfono</label>
+                    <input type="tel" name="Telefono">
+                </div>
+                <div class="input-container">
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea name="Mensaje" rows="10"></textarea>
+                </div>
+                <button class="submit-button" type="submit" value="Submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div id="datos-contacto">
+        <div class="hidden contacto-item">
+            <div class="contacto-content">
+                <img class="contacto-img" src="img/telefono.svg" alt="teléfono">
+                <div class="contacto-text">
+                    <h5 class="contacto-title">Teléfono</h5>
+                    <a href="tel:+541165349136">+54 9 11 6534 9136</a>
+                    <br>
+                    <a href="tel:+541134366488">+54 9 11 3436 6488</a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden contacto-item">
+            <div class="contacto-content">
+                <img class="contacto-img" src="img/dirreccion.svg" alt="teléfono">
+                <div class="contacto-text">
+                    <h5 class="contacto-title">Ubicación</h5>
+                    <a href="https://goo.gl/maps/Q3UQRkrhzMM2" target="_blank">Av. Federico Lacroze 2206, <br>Buenos Aires.</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="hidden contacto-item">
+            <div class="contacto-content">
+                <img class="contacto-img" src="img/mail.svg" alt="teléfono">
+                <div class="contacto-text">
+                    <h5 class="contacto-title">Correo electrónico</h5>
+                    <a href="mailto:info@cnfinanzas.com">info@cnfinanzas.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var animateHTML = function() {
+        var elems;
+        var windowHeight;
+        function init() {
+        elems = document.querySelectorAll('.hidden');
+        windowHeight = window.innerHeight;
+        addEventHandlers();
+        checkPosition();
+        }
+        function addEventHandlers() {
+        window.addEventListener('scroll', checkPosition);
+        window.addEventListener('resize', init);
+        }
+        function checkPosition() {
+        for (var i = 0; i < elems.length; i++) {
+            var positionFromTop = elems[i].getBoundingClientRect().top;
+            if (positionFromTop - windowHeight <= 0) {
+            elems[i].className = elems[i].className.replace(
+                'hidden',
+                'fade-in-element'
+            );
+            }
+        }
+        }
+        return {
+        init: init
+        };
+    };
+    animateHTML().init();
+</script>

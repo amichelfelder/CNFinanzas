@@ -1,0 +1,278 @@
+<!Doctype HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 200) {
+                $(".main-menu").addClass("main-menu-scroll");
+            } else {
+                $(".main-menu").removeClass("main-menu-scroll");
+            }
+        });
+    </script>
+    <!-- SCROLL ANIMATION -->
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd58a8AzZxe0Z4V3O8i6-jtIahLDy07O0&callback=initMap"></script>
+    <script src="informes.js"></script>
+    <script src="prensa.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>CN Finanzas</title>
+</head>
+<body>
+    <div class="main-menu">
+        <div class="main-menu-logo">
+            <a href="#home">
+                <img class="iso" src="img/cn.svg" alt="CN">
+                <img class="logo" src="img/logo.svg" alt="CN Finanzas">
+            </a>
+        </div>
+        <div class="main-menu-items">
+            <a href="#nosotros">About Us</a>
+            <a href="#servicios">Solutions</a>
+            <a href="#informes">Research</a>
+            <a href="#prensa">Press</a>
+            <a href="#contacto">Contact Us</a>
+            <a class="language" href="index.html">ES</a>
+        </div>
+    </div>
+    <table id="home">
+        <tr>
+            <td>
+                <img class="home-logo hidden" src="img/logo.svg" alt="CN Finanzas">
+                <!-- <span class="hidden">texto</span>    -->
+            </td>
+        </tr>
+    </table>
+    <div id="nosotros">
+        <div class="section-title">
+            <h3>About us</h3>
+            <hr>
+        </div>
+        <div class="section-text">
+            <p class="destacado">
+                CN Finanzas connects its clients, from the private and public sector, with the most complete network of financial information on Argentina’s public entities (national, provincial, municipal and other entities).
+            </p>
+            <p>
+                We create value through tools that allow decision makers to have more accuracy, confidence and swiftness. Our experience in the area and the continuous expansion of our information sources allows CN Finanzas to become and essential component when it comes down to sub-sovereign finances.
+            </p>
+        </div>
+        <div class="nosotros-socios">
+            <div class="socio hidden">
+                <img src="img/federico.jpg" alt="Pablo" class="socio-img">
+
+                <div class="socio-title">
+                    <p>Federico Cuba</p>
+                    <span>Partner</span>
+                </div>
+                <p class="socio-texto">
+                    BA in Economics from the University of Buenos Aires. Public Economics professor at Universidad Católica Argentina. He was an analyst for the Latam Research team at HSBC Bank and Public Sector Senior Analyst at Economía y Regiones.
+                </p>
+                <p class="socio-texto">                    
+                    Specialized in financial markets and fiscal solvency analysis. He participated in teams focused on financial counselling to the public sector and assisted the private sector in decision making matters on sovereign and sub-sovereign debt.
+                </p>
+            </div>
+            <div class="socio hidden">
+                <img src="img/pablo.jpg" alt="Pablo" class="socio-img">
+
+                <div class="socio-title">
+                    <p>Pablo Niscovolos</p>
+                    <span>Partner</span>
+                </div>
+                <p class="socio-texto">
+                    BA in Economics from the University of Buenos Aires. Professor on Macroeconomics and Economic Policy at the University of Buenos Aires. He was a Public Sector and Foreign Trade Analyst at Economía y Regiones. 
+                </p>
+                <p class="socio-texto">
+                    He assisted private financial institutions in the area of public sector loans. Experienced in the analysis of trade and financial flows.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="servicios">
+        <div class="section-title">
+            <h3>Solutions</h3>
+            <hr>
+        </div>
+        <div class="section-content">
+            <div class="servicios-item hidden">
+                <img src="img/finanzas-provinciales.svg" alt="">
+                <div class="servicio-title">
+                        Sub-sovereign <br>
+                        Research
+                </div>
+                <div class="servicio-text">
+                        We provide counselling and research on the financial situation of sub-sovereign entities. 
+                </div>
+            </div>
+            <div class="servicios-item hidden">
+                <img src="img/gestion-publica.svg" alt="">
+                <div class="servicio-title">
+                        Government administration <br>
+                        and Fiscal Impact
+                </div>
+                <div class="servicio-text">
+                        We assist the public sector with analysis on the economic context allowing for a better public policy and management. 
+                </div>
+            </div>
+            <div class="servicios-item hidden">
+                <img src="img/macroeconomia.svg" alt="">
+                <div class="servicio-title">
+                        Macroeconomic <br>
+                        analysis
+                </div>
+                <div class="servicio-text">
+                        We provide a broad view on the macroeconomic situation, spotting the implications to offer our expected scenario.
+                </div>
+            </div>
+            <!-- <div class="servicios-item hidden">
+                <img src="img/comercio-interrancional.svg" alt="">
+                <div class="servicio-title">
+                        Comercio exterior y<br>
+                        economía internacional
+                </div>
+                <div class="servicio-text">
+                    Otorgamos una visión integral de la situación internacional y su vínculo con la Argentina para permitir una correcta toma de decisiones tanto para el sector privado y público
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div id="informes">
+        <div class="section-title">
+            <h3>Research</h3>
+            <hr>
+        </div>
+
+        <!--<p class="proximamente">
+            Este contenido estará disponible proximamente.
+        </p>-->
+        <div id="researchlist" class="hidden">
+        </div>
+    </div>
+    <div id="prensa">
+        <div class="section-title">
+            <h3>Press</h3>
+            <hr>
+        </div>
+        <!--<p class="proximamente">
+            Este contenido estará disponible proximamente.
+        </p>-->
+        <div id="prensalist" class="hidden">
+        </div> 
+
+    </div>
+    <div id="contacto">
+        <div class="section-title">
+            <h3>Contact us</h3>
+            <hr>
+        </div>
+        <div class="contact-form-container">
+            <p class="contact-text">
+                Contact us, we'll get back to you as soon as possible.
+            </p>
+            <form action="mail.php" method="POST">
+                <div class="input-container">
+                    <label for="Nombre">Name</label>
+                    <input type="text" name="Nombre">
+                </div>
+                <div class="input-container">
+                    <label for="Email">Email</label>
+                    <input type="mail" name="Email">
+                </div>
+                <div class="input-container">
+                    <label for="Telefono">Phone Number</label>
+                    <input type="tel" name="Telefono">
+                </div>
+                <div class="input-container">
+                    <label for="Mensaje">Message</label>
+                    <textarea name="Mensaje" rows="10"></textarea>
+                </div>
+                <button class="submit-button" type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="datos-contacto">
+        <div class="hidden contacto-item">
+            <div class="contacto-content">
+                <img class="contacto-img" src="img/telefono.svg" alt="teléfono">
+                <div class="contacto-text">
+                    <h5 class="contacto-title">Phone Number</h5>
+                    <a href="tel:+541165349136">+54 9 11 6534 9136</a>
+                    <br>
+                    <a href="tel:+541134366488">+54 9 11 3436 6488</a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden contacto-item">
+            <div class="contacto-content">
+                <img class="contacto-img" src="img/dirreccion.svg" alt="teléfono">
+                <div class="contacto-text">
+                    <h5 class="contacto-title">Location</h5>
+                    <a href="https://goo.gl/maps/Q3UQRkrhzMM2" target="_blank">Av. Federico Lacroze 2206, <br>Buenos Aires.</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="hidden contacto-item">
+            <div class="contacto-content">
+                <img class="contacto-img" src="img/mail.svg" alt="teléfono">
+                <div class="contacto-text">
+                    <h5 class="contacto-title">Email</h5>
+                    <a href="mailto:info@cnfinanzas.com">info@cnfinanzas.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var animateHTML = function() {
+        var elems;
+        var windowHeight;
+        function init() {
+        elems = document.querySelectorAll('.hidden');
+        windowHeight = window.innerHeight;
+        addEventHandlers();
+        checkPosition();
+        }
+        function addEventHandlers() {
+        window.addEventListener('scroll', checkPosition);
+        window.addEventListener('resize', init);
+        }
+        function checkPosition() {
+        for (var i = 0; i < elems.length; i++) {
+            var positionFromTop = elems[i].getBoundingClientRect().top;
+            if (positionFromTop - windowHeight <= 0) {
+            elems[i].className = elems[i].className.replace(
+                'hidden',
+                'fade-in-element'
+            );
+            }
+        }
+        }
+        return {
+        init: init
+        };
+    };
+    animateHTML().init();
+</script>
